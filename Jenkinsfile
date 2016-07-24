@@ -2,6 +2,8 @@
 node("slave") {
     stage "Получение исходных кодов"
     //git url: 'https://github.com/silverbulleters/vanessa-behavior-new.git'
+    
+    
     checkout scm
     if (env.DISPLAY) {
         println env.DISPLAY;
@@ -12,7 +14,7 @@ node("slave") {
 
     if (isUnix()) {sh 'git config --system core.longpaths'} else {bat "git config --system core.longpaths"}
 
-    if (isUnix()) {sh 'git submodule update --init --recursive'} else {bat "git submodule update --init --recursive"}
+    if (isUnix()) {sh 'git submodule update --init'} else {bat "git submodule update --init"}
     
     stage "Контроль технического долга"
 
