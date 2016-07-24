@@ -1,0 +1,89 @@
+﻿[
+    {
+        "srctoepf" : {
+            "connectionstring":"/F./build/ibservice", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./features/", 
+            "outDir":"./build/out/features/",
+            "name":"srcfeatures",
+            "autoupdate":[
+                {"autoupdate":"epfsrcfeatures"}
+            ]
+
+        }
+
+    },
+    {
+        "epftosrc" : {
+            "connectionstring":"/F./build/ibservice", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./build/out/features/", 
+            "outDir":"./features/",
+            "name":"epfsrcfeatures",
+            "autoupdate": "srcfeatures" 
+        }
+
+    },
+    {
+        "srctoepf" : {
+            "connectionstring":"/F./build/ibservice", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./vanessa-behavior/", 
+            "outDir":"./build/out/",
+            "name":"srcvanessa",
+            "autoupdate": "epfsrcvanessa"
+        }
+
+    },
+    {
+        "epftosrc" : {
+            "connectionstring":"/F./build/ibservice", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./build/out/vanessa-behavior.epf", 
+            "outDir":"./",
+            "name":"epfsrcvanessa",
+            "autoupdate": "srcvanessa" 
+        }
+
+    }, 
+    {
+        "srccftoib" : {
+            "connectionstring":"/F./build/ib", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./lib/CF/83NoSync/",
+            "autoupdate":"true"
+        }
+
+    },
+    {
+        "srctoepf" : {
+            "connectionstring":"/F./build/ibservice", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./vbFeatureReader/", 
+            "outDir":"./build/out/",
+            "name":"srcfeaturereader",
+            "autoupdate": "epfsrcvbFeatureReader"
+        }
+
+    },
+    {
+        "epftosrc" : {
+            "connectionstring":"/F./build/ibservice", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./build/out/vbFeatureReader.epf", 
+            "outDir":"./",
+            "name":"epfsrcvbFeatureReader",
+            "autoupdate": "srcfeaturereader" 
+        }
+
+    }
+    
+]
+   
