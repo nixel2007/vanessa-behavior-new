@@ -10,6 +10,8 @@ node("slave") {
     }
     env.RUNNER_ENV="production";
 
+    if (isUnix()) {sh 'git config --system core.longpaths'} else {bat "git config --system core.longpaths"}
+
     if (isUnix()) {sh 'git submodule update --init --recursive'} else {bat "git submodule update --init --recursive"}
     
     stage "Контроль технического долга"
