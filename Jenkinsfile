@@ -10,7 +10,7 @@ node("slave") {
     }
     env.RUNNER_ENV="production";
 
-    if (isUnix()) {sh 'git submodule update --init --recurcive'} else {bat "git submodule update --init --recurcive"}
+    if (isUnix()) {sh 'git submodule update --init --recursive'} else {bat "git submodule update --init --recursive"}
     
     stage "Контроль технического долга"
 
