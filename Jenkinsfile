@@ -35,7 +35,7 @@ node("slave") {
     if (env.V8VERSION) {
         v8version = "--v8version ${env.V8VERSION}"
     }
-    def command = "oscript tools/init.os init-dev ${v8version} --src "+srcpath
+    def command = "oscript -encoding=utf-8 tools/init.os init-dev ${v8version} --src "+srcpath
     timestamps {
         if (isUnix()){
             sh "${command}"
@@ -47,7 +47,7 @@ node("slave") {
     stage "Сборка поставки"
 	
     echo "build catalogs"
-    command = """oscript tools/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
+    command = """oscript -encoding=utf-8 tools/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
     if (isUnix()) {sh "${command}"} else {bat "chcp 1251\n${command}"}       
     
     stage "Проверка поведения BDD"
@@ -55,7 +55,7 @@ node("slave") {
     if (env.PATHSETTINGS) {
         testsettings = env.PATHSETTINGS;
     }
-    command = """oscript tools/runner.os vanessa ${v8version} --ibname /F"./build/ib" --path ./build/out/vanessa-behavior.epf --pathsettings ./tools/JSON/${testsettings} """
+    command = """oscript -encoding=utf-8 tools/runner.os vanessa ${v8version} --ibname /F"./build/ib" --path ./build/out/vanessa-behavior.epf --pathsettings ./tools/JSON/${testsettings} """
     def errors = []
     try{
         if (isUnix()){
