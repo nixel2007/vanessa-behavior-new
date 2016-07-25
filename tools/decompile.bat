@@ -10,4 +10,4 @@ rem if not exist %BUILDPATH% set BUILDPATH=..\build
 
 SET connstring=--ibname /F"%BUILDPATH%\ib"
 
-oscript %mypath%/runner.os decompileepf %BUILDPATH%\out\ %BUILDPATH%\..\ %connstring% 
+oscript -encoding=utf-8 %mypath%/runner.os decompileepf %BUILDPATH%\out\ %BUILDPATH%\..\ %connstring% 

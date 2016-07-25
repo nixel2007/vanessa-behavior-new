@@ -12,5 +12,5 @@ SET RUNNER_ENV=production
 
 echo "watch"
 rem oscript %mypath%/runner.os watch compile.json --filter srcexmaples
-oscript %mypath%/runner.os watch ./compile.json
+oscript -encoding=utf-8 %mypath%/runner.os watch ./compile.json
 exit /B

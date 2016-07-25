@@ -18,7 +18,12 @@ node("slave") {
     
     stage "Контроль технического долга"
 
-    echo "will be soon"
+    if (env.QASONAR) {
+        println env.QASONAR;
+
+    } else {
+        echo "QA runner not installed"
+    }
 
     stage "Подготовка окружения"
 
