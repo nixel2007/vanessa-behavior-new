@@ -43,7 +43,19 @@ node("slave") {
             bat "chcp 1251\n${command}"
         }
     }
-
+    
+    stage "Сборка поставки"
+	
+    echo "build catalogs"
+    command = """oscript -encoding=utf-8 tools/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
+    if (isUnix()) {sh "${command}"} else {bat "chcp 1251\n${command}"}       
+    
+    stage "Проверка поведения BDD"
+    def testsettings = "VBParams837UF.json";
+    if (env.PATHSETTINGS) {
+        testsettings = env.PATHSETTINGS;
+    }
+    
     // TODO:
     // Придумать, как это сделать красиво и с учетом того, что задано в VBParams837UF.json
     // Стр = Стр + " /Execute " + ПараметрыСборки["EpfДляИнициализацияБазы"] + " /C""InitDataBase;VBParams=" + ПараметрыСборки["ПараметрыДляИнициализацияБазы"] + """";
@@ -59,18 +71,6 @@ node("slave") {
         }
     } catch (e) {
          errors << "BDD status : ${e}"
-    }
-    
-    stage "Сборка поставки"
-	
-    echo "build catalogs"
-    command = """oscript -encoding=utf-8 tools/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
-    if (isUnix()) {sh "${command}"} else {bat "chcp 1251\n${command}"}       
-    
-    stage "Проверка поведения BDD"
-    def testsettings = "VBParams837UF.json";
-    if (env.PATHSETTINGS) {
-        testsettings = env.PATHSETTINGS;
     }
 
     command = """oscript -encoding=utf-8 tools/runner.os vanessa ${v8version} --ibname /F"./build/ib" --path ./build/out/vanessa-behavior.epf --pathsettings ./tools/JSON/${testsettings} """
