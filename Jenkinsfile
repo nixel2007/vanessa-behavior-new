@@ -10,7 +10,7 @@ node("slave") {
     } else {
         env.DISPLAY=":1"
     }
-    env.RUNNER_ENV="production";
+    //env.RUNNER_ENV="production";
 
     if (isUnix()) {sh 'git config --system core.longpaths'} else {bat "git config --system core.longpaths"}
 
