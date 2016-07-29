@@ -73,7 +73,6 @@ node("slave") {
     }
 
     command = """oscript -encoding=utf-8 tools/runner.os vanessa ${v8version} --ibname /F"./build/ib" --path ./build/out/vanessa-behavior.epf --pathsettings ./tools/JSON/${testsettings} """
-    def errors = []
     try{
         if (isUnix()){
             sh "${command}"
