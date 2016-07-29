@@ -47,7 +47,7 @@ node("slave") {
     // TODO:
     // Придумать, как это сделать красиво и с учетом того, что задано в VBParams837UF.json
     // Стр = Стр + " /Execute " + ПараметрыСборки["EpfДляИнициализацияБазы"] + " /C""InitDataBase;VBParams=" + ПараметрыСборки["ПараметрыДляИнициализацияБазы"] + """";
-    def VBParamsPath = new File("build/out/tools/epf/init.json").absolutePath
+    def VBParamsPath = pwd() + "/build/out/tools/epf/init.json")
     command = """oscript -encoding=utf-8 tools/runner.os run ${v8version} --ibname /F"./build/ib" --execute "./build/out/tools/epf/init.epf" --command "InitDataBase;VBParams=${VBParamsPath}" """
     def errors = []
     try{
