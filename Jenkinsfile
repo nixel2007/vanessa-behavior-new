@@ -55,6 +55,23 @@ node("slave") {
     if (env.PATHSETTINGS) {
         testsettings = env.PATHSETTINGS;
     }
+    // TODO:
+    // Придумать, как это сделать красиво и с учетом того, что задано в VBParams837UF.json
+    // Стр = Стр + " /Execute " + ПараметрыСборки["EpfДляИнициализацияБазы"] + " /C""InitDataBase;VBParams=" + ПараметрыСборки["ПараметрыДляИнициализацияБазы"] + """";
+	
+    command = """oscript -encoding=utf-8 tools/runner.os run ${v8version} --ibname /F"./build/ib" --execute "./tools/epf/init.epf" --command "InitDataBase;VBParams=./tools/epf/init.epf" """
+    def errors = []
+    try{
+        if (isUnix()){
+            sh "${command}"
+            
+        } else {
+            bat "chcp 1251\n${command}"
+        }
+    } catch (e) {
+         errors << "BDD status : ${e}"
+    }
+
     command = """oscript -encoding=utf-8 tools/runner.os vanessa ${v8version} --ibname /F"./build/ib" --path ./build/out/vanessa-behavior.epf --pathsettings ./tools/JSON/${testsettings} """
     def errors = []
     try{
