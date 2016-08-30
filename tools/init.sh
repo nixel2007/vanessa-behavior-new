@@ -14,8 +14,12 @@ fi
 
 connstring=
 USERPWD=
-#connstring=--ibname /F"~/projects/onec/itil"
-#USERPWD=--db-user base --db-pwd 234567890
-#export RUNNER_ENV=production
 
+dir=`dirname $0`
+
+export RUNNER_ENV=production
+
+pushd $dir
 oscript $real_path/init.os init-dev --src "$real_path/$mode"
+oscript $real_path/init.os init-dev --dev --src "$real_path/$mode"
+popd
