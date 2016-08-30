@@ -90,6 +90,7 @@
 			</Attribute>
 			<Form>Форма</Form>
 			<Template>Макет</Template>
+			<Template>ПользовательИБ</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>

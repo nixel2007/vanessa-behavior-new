@@ -877,521 +877,118 @@
 							</ToolTip>
 							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="593"/>
 							<ChildItems>
-								<UsualGroup name="ГруппаБазовыхНастроек" id="659">
+								<Pages name="СтраницыСервис" id="650">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа базовых настроек</v8:content>
+											<v8:content>Страницы сервис</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа базовых настроек</v8:content>
+											<v8:content>Страницы сервис</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ChildrenAlign>None</ChildrenAlign>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ThroughAlign>DontUse</ThroughAlign>
-									<ExtendedTooltip name="ГруппаБазовыхНастроекРасширеннаяПодсказка" id="660"/>
+									<ExtendedTooltip name="СтраницыСервисРасширеннаяПодсказка" id="651"/>
 									<ChildItems>
-										<CheckBoxField name="ПроверкаРаботыVanessaBehaviorВРежимеTestClient" id="481">
-											<DataPath>Объект.ПроверкаРаботыVanessaBehaviorВРежимеTestClient</DataPath>
+										<Page name="СтраницыСервисОсновные" id="652">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Проверка работы Vanessa-Behavior в режиме test client</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>en</v8:lang>
-													<v8:content>Check Vanessa-Behavior on 1C test client session</v8:content>
-												</v8:item>
-											</Title>
-											<TitleLocation>Right</TitleLocation>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ПроверкаРаботыVanessaBehaviorВРежимеTestClientКонтекстноеМеню" id="482"/>
-											<ExtendedTooltip name="ПроверкаРаботыVanessaBehaviorВРежимеTestClientРасширеннаяПодсказка" id="594"/>
-											<Events>
-												<Event name="OnChange">ПроверкаРаботыVanessaBehaviorВРежимеTestClientПриИзменении</Event>
-											</Events>
-										</CheckBoxField>
-										<Button name="СохранитьНастройки" id="661">
-											<Type>UsualButton</Type>
-											<Representation>Picture</Representation>
-											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-											<CommandName>Form.Command.СохранитьНастройки</CommandName>
-											<Picture>
-												<xr:Ref>StdPicture.Write</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="662"/>
-										</Button>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="ГруппаОтчетыОЗапуске" id="144">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Отчёты о запуске сценариев</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отчеты о запуске</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<ExtendedTooltip name="ГруппаОтчетыОЗапускеРасширеннаяПодсказка" id="595"/>
-									<ChildItems>
-										<CheckBoxField name="ДелатьОтчетВоВнутреннемФормате" id="375">
-											<DataPath>Объект.ДелатьОтчетВоВнутреннемФормате</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Формировать отчет о запуске во внутреннем формате</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>en</v8:lang>
-													<v8:content>Create report in internal format</v8:content>
-												</v8:item>
-											</Title>
-											<TitleLocation>Right</TitleLocation>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ДелатьОтчетВоВнутреннемФорматеКонтекстноеМеню" id="376"/>
-											<ExtendedTooltip name="ДелатьОтчетВоВнутреннемФорматеРасширеннаяПодсказка" id="596"/>
-										</CheckBoxField>
-										<UsualGroup name="Группа2" id="378">
-											<Group>Horizontal</Group>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="597"/>
-											<ChildItems>
-												<CheckBoxField name="ДелатьОтчетВФорматеАллюр" id="138">
-													<DataPath>Объект.ДелатьОтчетВФорматеАллюр</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>    данные для отчета Allure</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Create data for Allure QA Report</v8:content>
-														</v8:item>
-													</Title>
-													<TitleLocation>Right</TitleLocation>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ДелатьОтчетВФорматеАллюрКонтекстноеМеню" id="139"/>
-													<ExtendedTooltip name="ДелатьОтчетВФорматеАллюрРасширеннаяПодсказка" id="598"/>
-												</CheckBoxField>
-												<InputField name="КаталогOutputAllure" id="141">
-													<DataPath>Объект.КаталогOutputAllure</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Временный каталог файлов результатов Allure</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Temp dir for Allure test suite files</v8:content>
-														</v8:item>
-													</Title>
-													<ChoiceButton>true</ChoiceButton>
-													<ClearButton>true</ClearButton>
-													<ContextMenu name="КаталогOutputAllureКонтекстноеМеню" id="142"/>
-													<ExtendedTooltip name="КаталогOutputAllureРасширеннаяПодсказка" id="599"/>
-													<Events>
-														<Event name="StartChoice">КаталогOutputAllureНачалоВыбора</Event>
-													</Events>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="Группа5" id="505">
-											<Group>Horizontal</Group>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="600"/>
-											<ChildItems>
-												<CheckBoxField name="ДелатьСкриншотПриВозникновенииОшибки" id="507">
-													<DataPath>Объект.ДелатьСкриншотПриВозникновенииОшибки</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>    скриншот при ошибке</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Create screnshoots on exception</v8:content>
-														</v8:item>
-													</Title>
-													<TitleLocation>Right</TitleLocation>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ДелатьСкриншотПриВозникновенииОшибкиКонтекстноеМеню" id="508"/>
-													<ExtendedTooltip name="ДелатьСкриншотПриВозникновенииОшибкиРасширеннаяПодсказка" id="601"/>
-												</CheckBoxField>
-												<InputField name="КаталогOutputСкриншоты" id="510">
-													<DataPath>Объект.КаталогOutputСкриншоты</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Временный каталог сохранения скриншотов</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Temp directory for screenshoots</v8:content>
-														</v8:item>
-													</Title>
-													<ChoiceButton>true</ChoiceButton>
-													<ClearButton>true</ClearButton>
-													<ContextMenu name="КаталогOutputСкриншотыКонтекстноеМеню" id="511"/>
-													<ExtendedTooltip name="КаталогOutputСкриншотыРасширеннаяПодсказка" id="602"/>
-													<Events>
-														<Event name="StartChoice">КаталогOutputСкриншотыНачалоВыбора</Event>
-													</Events>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="Группа1" id="373">
-											<Group>Horizontal</Group>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="603"/>
-											<ChildItems>
-												<CheckBoxField name="ДелатьОтчетВФорматеxUnit" id="367">
-													<DataPath>Объект.ДелатьОтчетВФорматеxUnit</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>    отчет в формате jUnit</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Create report on jUnit format </v8:content>
-														</v8:item>
-													</Title>
-													<TitleLocation>Right</TitleLocation>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ДелатьОтчетВФорматеxUnitКонтекстноеМеню" id="368"/>
-													<ExtendedTooltip name="ДелатьОтчетВФорматеxUnitРасширеннаяПодсказка" id="604"/>
-												</CheckBoxField>
-												<InputField name="КаталогOutputxUnit" id="370">
-													<DataPath>Объект.КаталогOutputxUnit</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Временный каталог для файлов JUnit</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Temp dir for JUnit xml files</v8:content>
-														</v8:item>
-													</Title>
-													<ChoiceButton>true</ChoiceButton>
-													<ClearButton>true</ClearButton>
-													<ContextMenu name="КаталогOutputxUnitКонтекстноеМеню" id="371"/>
-													<ExtendedTooltip name="КаталогOutputxUnitРасширеннаяПодсказка" id="605"/>
-													<Events>
-														<Event name="StartChoice">КаталогOutputxUnitНачалоВыбора</Event>
-													</Events>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="Группа4" id="146">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Формирование автоматизированных инструкций</v8:content>
-										</v8:item>
-									</Title>
-									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="606"/>
-									<ChildItems>
-										<UsualGroup name="Группа6" id="513">
-											<Group>Horizontal</Group>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="607"/>
-											<ChildItems>
-												<CheckBoxField name="СоздаватьИнструкциюHTML" id="135">
-													<DataPath>Объект.СоздаватьИнструкциюHTML</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Создавать HTML инструкцию</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Create HTML documentaion</v8:content>
-														</v8:item>
-													</Title>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="СоздаватьИнструкциюHTMLКонтекстноеМеню" id="136"/>
-													<ExtendedTooltip name="СоздаватьИнструкциюHTMLРасширеннаяПодсказка" id="608"/>
-												</CheckBoxField>
-												<InputField name="КаталогOutputИнструкцияHTML" id="148">
-													<DataPath>Объект.КаталогOutputИнструкцияHTML</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Каталог для инструкций HTML</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>HTML documentation files dir</v8:content>
-														</v8:item>
-													</Title>
-													<ChoiceButton>true</ChoiceButton>
-													<ClearButton>true</ClearButton>
-													<ContextMenu name="КаталогOutputИнструкцияHTMLКонтекстноеМеню" id="149"/>
-													<ExtendedTooltip name="КаталогOutputИнструкцияHTMLРасширеннаяПодсказка" id="609"/>
-													<Events>
-														<Event name="StartChoice">КаталогOutputИнструкцияHTMLНачалоВыбора</Event>
-													</Events>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="Группа8" id="642">
-											<Group>Horizontal</Group>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="643"/>
-											<ChildItems>
-												<CheckBoxField name="СоздаватьИнструкциюMarkdown" id="644">
-													<DataPath>Объект.СоздаватьИнструкциюMarkdown</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Создавать Markdown инструкцию</v8:content>
-														</v8:item>
-													</Title>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="СоздаватьИнструкциюMarkdownКонтекстноеМеню" id="645"/>
-													<ExtendedTooltip name="СоздаватьИнструкциюMarkdownРасширеннаяПодсказка" id="646"/>
-												</CheckBoxField>
-												<InputField name="КаталогOutputИнструкцияMarkdown" id="647">
-													<DataPath>Объект.КаталогOutputИнструкцияMarkdown</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Каталог для инструкций Markdown</v8:content>
-														</v8:item>
-													</Title>
-													<ChoiceButton>true</ChoiceButton>
-													<ClearButton>true</ClearButton>
-													<ContextMenu name="КаталогOutputИнструкцияMarkdownКонтекстноеМеню" id="648"/>
-													<ExtendedTooltip name="КаталогOutputИнструкцияMarkdownРасширеннаяПодсказка" id="649"/>
-													<Events>
-														<Event name="StartChoice">КаталогOutputИнструкцияMarkdownНачалоВыбора</Event>
-													</Events>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="Группа7" id="515">
-											<Group>Horizontal</Group>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="610"/>
-											<ChildItems>
-												<CheckBoxField name="СоздаватьИнструкциюВидео" id="517">
-													<DataPath>Объект.СоздаватьИнструкциюВидео</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Создавать видеоинструкцию</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Create live video documentation</v8:content>
-														</v8:item>
-													</Title>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="СоздаватьИнструкциюВидеоКонтекстноеМеню" id="518"/>
-													<ExtendedTooltip name="СоздаватьИнструкциюВидеоРасширеннаяПодсказка" id="611"/>
-												</CheckBoxField>
-												<InputField name="КаталогOutputИнструкцияВидео" id="520">
-													<DataPath>Объект.КаталогOutputИнструкцияВидео</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Каталог для инструкций видео</v8:content>
-														</v8:item>
-													</Title>
-													<ChoiceButton>true</ChoiceButton>
-													<ClearButton>true</ClearButton>
-													<ContextMenu name="КаталогOutputИнструкцияВидеоКонтекстноеМеню" id="521"/>
-													<ExtendedTooltip name="КаталогOutputИнструкцияВидеоРасширеннаяПодсказка" id="612"/>
-													<Events>
-														<Event name="StartChoice">КаталогOutputИнструкцияВидеоНачалоВыбора</Event>
-													</Events>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="Группа3" id="503">
-											<Group>Vertical</Group>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="613"/>
-											<ChildItems>
-												<InputField name="КомандаСделатьСкриншот" id="500">
-													<DataPath>Объект.КомандаСделатьСкриншот</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Консольная команда создания скриншотов</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Console command on screanshots create</v8:content>
-														</v8:item>
-													</Title>
-													<ContextMenu name="КомандаСделатьСкриншотКонтекстноеМеню" id="501"/>
-													<ExtendedTooltip name="КомандаСделатьСкриншотРасширеннаяПодсказка" id="614"/>
-												</InputField>
-												<InputField name="КаталогСкриптовСборкиВидео" id="526">
-													<DataPath>Объект.КаталогСкриптовСборкиВидео</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Скрипты создания видеоинструкций</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Video instruction scripts directory</v8:content>
-														</v8:item>
-													</Title>
-													<ChoiceButton>true</ChoiceButton>
-													<ClearButton>true</ClearButton>
-													<ContextMenu name="КаталогСкриптовСборкиВидеоКонтекстноеМеню" id="527"/>
-													<ExtendedTooltip name="КаталогСкриптовСборкиВидеоРасширеннаяПодсказка" id="615"/>
-													<Events>
-														<Event name="StartChoice">КаталогСкриптовСборкиВидеоНачалоВыбора</Event>
-													</Events>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="РаботаСТэгами" id="304">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Работа с тэгами</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Работа с тэгами</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<ExtendedTooltip name="РаботаСТэгамиРасширеннаяПодсказка" id="616"/>
-									<ChildItems>
-										<Table name="СписокТеговИсключение" id="208">
-											<Representation>List</Representation>
-											<Header>false</Header>
-											<HorizontalLines>false</HorizontalLines>
-											<VerticalLines>false</VerticalLines>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<DataPath>Объект.СписокТеговИсключение</DataPath>
-											<RowPictureDataPath>Объект.СписокТеговИсключение.Picture</RowPictureDataPath>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
-											<ContextMenu name="СписокТеговИсключениеКонтекстноеМеню" id="209"/>
-											<AutoCommandBar name="СписокТеговИсключениеКоманднаяПанель" id="210"/>
-											<ExtendedTooltip name="СписокТеговИсключениеРасширеннаяПодсказка" id="617"/>
-											<SearchStringAddition name="СписокТеговИсключениеСтрокаПоиска" id="618">
-												<AdditionSource>
-													<Item>СписокТеговИсключение</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="СписокТеговИсключениеСтрокаПоискаКонтекстноеМеню" id="619"/>
-												<ExtendedTooltip name="СписокТеговИсключениеСтрокаПоискаРасширеннаяПодсказка" id="620"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="СписокТеговИсключениеСостояниеПросмотра" id="621">
-												<AdditionSource>
-													<Item>СписокТеговИсключение</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="СписокТеговИсключениеСостояниеПросмотраКонтекстноеМеню" id="622"/>
-												<ExtendedTooltip name="СписокТеговИсключениеСостояниеПросмотраРасширеннаяПодсказка" id="623"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="СписокТеговИсключениеУправлениеПоиском" id="624">
-												<AdditionSource>
-													<Item>СписокТеговИсключение</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="СписокТеговИсключениеУправлениеПоискомКонтекстноеМеню" id="625"/>
-												<ExtendedTooltip name="СписокТеговИсключениеУправлениеПоискомРасширеннаяПодсказка" id="626"/>
-											</SearchControlAddition>
-										</Table>
-										<InputField name="СписокТеговИсключение1" id="221">
-											<DataPath>Объект.СписокТеговИсключение</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Список исключаемых тэгов</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>en</v8:lang>
-													<v8:content>Not run tags</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="СписокТеговИсключение1КонтекстноеМеню" id="222"/>
-											<ExtendedTooltip name="СписокТеговИсключение1РасширеннаяПодсказка" id="627"/>
-										</InputField>
-										<InputField name="СписокТеговОтбор1" id="224">
-											<DataPath>Объект.СписокТеговОтбор</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Тэги для запуска</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>en</v8:lang>
-													<v8:content>Run only tags</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="СписокТеговОтбор1КонтекстноеМеню" id="225"/>
-											<ExtendedTooltip name="СписокТеговОтбор1РасширеннаяПодсказка" id="628"/>
-										</InputField>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="ГруппаГоризонтальнаяДляФлажков" id="653">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа горизонтальная для флажков</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа горизонтальная для флажков</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаГоризонтальнаяДляФлажковРасширеннаяПодсказка" id="654"/>
-									<ChildItems>
-										<UsualGroup name="ГруппаДляФлажковЛевая" id="655">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа для флажков левая</v8:content>
+													<v8:content>Основные</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа для флажков левая</v8:content>
+													<v8:content>Страницы сервис основные</v8:content>
 												</v8:item>
 											</ToolTip>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаДляФлажковЛеваяРасширеннаяПодсказка" id="656"/>
+											<ExtendedTooltip name="СтраницыСервисОсновныеРасширеннаяПодсказка" id="653"/>
 											<ChildItems>
+												<Button name="КомандаСохранитьНастроийки" id="720">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Command.КомандаСохранитьНастроийки</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сохранить</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="КомандаСохранитьНастроийкиРасширеннаяПодсказка" id="721"/>
+												</Button>
+												<UsualGroup name="РаботаСТэгами" id="304">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Работа с тэгами</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Работа с тэгами</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Behavior>Collapsible</Behavior>
+													<Representation>StrongSeparation</Representation>
+													<ExtendedTooltip name="РаботаСТэгамиРасширеннаяПодсказка" id="616"/>
+													<ChildItems>
+														<InputField name="СписокТеговИсключение1" id="221">
+															<DataPath>Объект.СписокТеговИсключение</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Список исключаемых тэгов</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Not run tags</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СписокТеговИсключение1КонтекстноеМеню" id="222"/>
+															<ExtendedTooltip name="СписокТеговИсключение1РасширеннаяПодсказка" id="627"/>
+														</InputField>
+														<InputField name="СписокТеговОтбор1" id="224">
+															<DataPath>Объект.СписокТеговОтбор</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Тэги для запуска</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Run only tags</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СписокТеговОтбор1КонтекстноеМеню" id="225"/>
+															<ExtendedTooltip name="СписокТеговОтбор1РасширеннаяПодсказка" id="628"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<CheckBoxField name="ПроверкаРаботыVanessaBehaviorВРежимеTestClient" id="481">
+													<DataPath>Объект.ПроверкаРаботыVanessaBehaviorВРежимеTestClient</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка работы Vanessa-Behavior в режиме test client</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Check Vanessa-Behavior on 1C test client session</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ПроверкаРаботыVanessaBehaviorВРежимеTestClientКонтекстноеМеню" id="482"/>
+													<ExtendedTooltip name="ПроверкаРаботыVanessaBehaviorВРежимеTestClientРасширеннаяПодсказка" id="594"/>
+													<Events>
+														<Event name="OnChange">ПроверкаРаботыVanessaBehaviorВРежимеTestClientПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
 												<CheckBoxField name="DebugLog2" id="289">
 													<DataPath>Объект.DebugLog</DataPath>
 													<Title>
@@ -1426,60 +1023,6 @@
 													<ContextMenu name="ПодключитьВнешниеОбработкиДляОтладкиКонтекстноеМеню" id="342"/>
 													<ExtendedTooltip name="ПодключитьВнешниеОбработкиДляОтладкиРасширеннаяПодсказка" id="630"/>
 												</CheckBoxField>
-												<CheckBoxField name="СохранятьКонтекстыПередВыполнениемШагов" id="344">
-													<DataPath>Объект.СохранятьКонтекстыПередВыполнениемШагов</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Сохранять контексты перед выполнением шагов</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Save contexts before step invoke</v8:content>
-														</v8:item>
-													</Title>
-													<TitleLocation>Right</TitleLocation>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="СохранятьКонтекстыПередВыполнениемШаговКонтекстноеМеню" id="345"/>
-													<ExtendedTooltip name="СохранятьКонтекстыПередВыполнениемШаговРасширеннаяПодсказка" id="633"/>
-												</CheckBoxField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="ГруппаДляФлажковПравая" id="657">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа для флажков правая</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа для флажков правая</v8:content>
-												</v8:item>
-											</ToolTip>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаДляФлажковПраваяРасширеннаяПодсказка" id="658"/>
-											<ChildItems>
-												<CheckBoxField name="ДелатьЛогВыполненияСценариевВЖР" id="338">
-													<DataPath>Объект.ДелатьЛогВыполненияСценариевВЖР</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Формировать журнал выполнения в журнал регистрации</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Output log to 1C registration journal</v8:content>
-														</v8:item>
-													</Title>
-													<TitleLocation>Right</TitleLocation>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ДелатьЛогВыполненияСценариевВЖРКонтекстноеМеню" id="339"/>
-													<ExtendedTooltip name="ДелатьЛогВыполненияСценариевВЖРРасширеннаяПодсказка" id="632"/>
-												</CheckBoxField>
 												<CheckBoxField name="ВыполнятьШагиАссинхронно" id="335">
 													<DataPath>Объект.ВыполнятьШагиАссинхронно</DataPath>
 													<Title>
@@ -1497,6 +1040,90 @@
 													<ContextMenu name="ВыполнятьШагиАссинхронноКонтекстноеМеню" id="336"/>
 													<ExtendedTooltip name="ВыполнятьШагиАссинхронноРасширеннаяПодсказка" id="631"/>
 												</CheckBoxField>
+												<CheckBoxField name="ДелатьЛогВыполненияСценариевВЖР" id="338">
+													<DataPath>Объект.ДелатьЛогВыполненияСценариевВЖР</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Формировать журнал выполнения в журнал регистрации</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Output log to 1C registration journal</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДелатьЛогВыполненияСценариевВЖРКонтекстноеМеню" id="339"/>
+													<ExtendedTooltip name="ДелатьЛогВыполненияСценариевВЖРРасширеннаяПодсказка" id="632"/>
+												</CheckBoxField>
+												<CheckBoxField name="СохранятьКонтекстыПередВыполнениемШагов" id="344">
+													<DataPath>Объект.СохранятьКонтекстыПередВыполнениемШагов</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сохранять контексты перед выполнением шагов</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Save contexts before step invoke</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СохранятьКонтекстыПередВыполнениемШаговКонтекстноеМеню" id="345"/>
+													<ExtendedTooltip name="СохранятьКонтекстыПередВыполнениемШаговРасширеннаяПодсказка" id="633"/>
+												</CheckBoxField>
+												<InputField name="VanessaStackCommons" id="364">
+													<DataPath>Объект.VanessaStackCommons</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Адрес расширенных инструментов Vanessa Satck Commons</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>path for extended Vanessa Satck Commons</v8:content>
+														</v8:item>
+													</Title>
+													<ChoiceButton>true</ChoiceButton>
+													<ClearButton>true</ClearButton>
+													<ContextMenu name="VanessaStackCommonsКонтекстноеМеню" id="365"/>
+													<ExtendedTooltip name="VanessaStackCommonsРасширеннаяПодсказка" id="634"/>
+													<Events>
+														<Event name="StartChoice">VanessaStackCommonsНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="КаталогИнструментов" id="380">
+													<DataPath>Объект.КаталогИнструментов</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Каталог Vanessa Stack</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>directory for Vanessa Stack</v8:content>
+														</v8:item>
+													</Title>
+													<ChoiceButton>true</ChoiceButton>
+													<ClearButton>true</ClearButton>
+													<ContextMenu name="КаталогИнструментовКонтекстноеМеню" id="381"/>
+													<ExtendedTooltip name="КаталогИнструментовРасширеннаяПодсказка" id="635"/>
+													<Events>
+														<Event name="StartChoice">КаталогИнструментовНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="КаталогПроекта" id="717">
+													<DataPath>Объект.КаталогПроекта</DataPath>
+													<ChoiceButton>true</ChoiceButton>
+													<ClearButton>true</ClearButton>
+													<ContextMenu name="КаталогПроектаКонтекстноеМеню" id="718"/>
+													<ExtendedTooltip name="КаталогПроектаРасширеннаяПодсказка" id="719"/>
+													<Events>
+														<Event name="StartChoice">КаталогПроектаНачалоВыбора</Event>
+													</Events>
+												</InputField>
 												<InputField name="ИнтервалВыполненияШагаЗаданныйПользователем" id="523">
 													<DataPath>Объект.ИнтервалВыполненияШагаЗаданныйПользователем</DataPath>
 													<Title>
@@ -1513,59 +1140,613 @@
 													<ExtendedTooltip name="ИнтервалВыполненияШагаЗаданныйПользователемРасширеннаяПодсказка" id="636"/>
 												</InputField>
 											</ChildItems>
-										</UsualGroup>
+										</Page>
+										<Page name="СтраницыОтчетыОЗапуске" id="654">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отчет о запуске сценариев</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страницы отчеты о запуске</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницыОтчетыОЗапускеРасширеннаяПодсказка" id="655"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаОтчетыОЗапуске" id="144">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отчёты о запуске сценариев</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа отчеты о запуске</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Behavior>Collapsible</Behavior>
+													<Representation>None</Representation>
+													<ExtendedTooltip name="ГруппаОтчетыОЗапускеРасширеннаяПодсказка" id="595"/>
+													<ChildItems>
+														<CheckBoxField name="ДелатьОтчетВоВнутреннемФормате" id="375">
+															<DataPath>Объект.ДелатьОтчетВоВнутреннемФормате</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Формировать отчет о запуске во внутреннем формате</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Create report in internal format</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДелатьОтчетВоВнутреннемФорматеКонтекстноеМеню" id="376"/>
+															<ExtendedTooltip name="ДелатьОтчетВоВнутреннемФорматеРасширеннаяПодсказка" id="596"/>
+														</CheckBoxField>
+														<UsualGroup name="Группа2" id="378">
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="597"/>
+															<ChildItems>
+																<CheckBoxField name="ДелатьОтчетВФорматеАллюр" id="138">
+																	<DataPath>Объект.ДелатьОтчетВФорматеАллюр</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Формировать данные для отчета Allure</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Create data for Allure QA Report</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>Right</TitleLocation>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ДелатьОтчетВФорматеАллюрКонтекстноеМеню" id="139"/>
+																	<ExtendedTooltip name="ДелатьОтчетВФорматеАллюрРасширеннаяПодсказка" id="598"/>
+																</CheckBoxField>
+																<InputField name="КаталогOutputAllure" id="141">
+																	<DataPath>Объект.КаталогOutputAllure</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Временный каталог файлов результатов Allure</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Temp dir for Allure test suite files</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ChoiceButton>true</ChoiceButton>
+																	<ClearButton>true</ClearButton>
+																	<ContextMenu name="КаталогOutputAllureКонтекстноеМеню" id="142"/>
+																	<ExtendedTooltip name="КаталогOutputAllureРасширеннаяПодсказка" id="599"/>
+																	<Events>
+																		<Event name="StartChoice">КаталогOutputAllureНачалоВыбора</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа5" id="505">
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="600"/>
+															<ChildItems>
+																<CheckBoxField name="ДелатьСкриншотПриВозникновенииОшибки" id="507">
+																	<DataPath>Объект.ДелатьСкриншотПриВозникновенииОшибки</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Формировать скриншот при ошибке</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Create screnshoots on exception</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>Right</TitleLocation>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ДелатьСкриншотПриВозникновенииОшибкиКонтекстноеМеню" id="508"/>
+																	<ExtendedTooltip name="ДелатьСкриншотПриВозникновенииОшибкиРасширеннаяПодсказка" id="601"/>
+																</CheckBoxField>
+																<InputField name="КаталогOutputСкриншоты" id="510">
+																	<DataPath>Объект.КаталогOutputСкриншоты</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Временный каталог сохранения скриншотов</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Temp directory for screenshoots</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ChoiceButton>true</ChoiceButton>
+																	<ClearButton>true</ClearButton>
+																	<ContextMenu name="КаталогOutputСкриншотыКонтекстноеМеню" id="511"/>
+																	<ExtendedTooltip name="КаталогOutputСкриншотыРасширеннаяПодсказка" id="602"/>
+																	<Events>
+																		<Event name="StartChoice">КаталогOutputСкриншотыНачалоВыбора</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа1" id="373">
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="603"/>
+															<ChildItems>
+																<CheckBoxField name="ДелатьОтчетВФорматеxUnit" id="367">
+																	<DataPath>Объект.ДелатьОтчетВФорматеxUnit</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Формировать отчет в формате jUnit</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Create report on jUnit format </v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>Right</TitleLocation>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ДелатьОтчетВФорматеxUnitКонтекстноеМеню" id="368"/>
+																	<ExtendedTooltip name="ДелатьОтчетВФорматеxUnitРасширеннаяПодсказка" id="604"/>
+																</CheckBoxField>
+																<InputField name="КаталогOutputxUnit" id="370">
+																	<DataPath>Объект.КаталогOutputxUnit</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Временный каталог для файлов JUnit</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Temp dir for JUnit xml files</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ChoiceButton>true</ChoiceButton>
+																	<ClearButton>true</ClearButton>
+																	<ContextMenu name="КаталогOutputxUnitКонтекстноеМеню" id="371"/>
+																	<ExtendedTooltip name="КаталогOutputxUnitРасширеннаяПодсказка" id="605"/>
+																	<Events>
+																		<Event name="StartChoice">КаталогOutputxUnitНачалоВыбора</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницыАвтоИнструкции" id="656">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Автоинструкции</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страницы авто инструкции</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницыАвтоИнструкцииРасширеннаяПодсказка" id="657"/>
+											<ChildItems>
+												<UsualGroup name="СтраницыАвтоИнструкцииОсновные" id="503">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страницы авто инструкции основные</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ExtendedTooltip name="СтраницыАвтоИнструкцииОсновныеРасширеннаяПодсказка" id="613"/>
+													<ChildItems>
+														<InputField name="КомандаСделатьСкриншот" id="500">
+															<DataPath>Объект.КомандаСделатьСкриншот</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Консольная команда создания скриншотов</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Console command on screanshots create</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="КомандаСделатьСкриншотКонтекстноеМеню" id="501"/>
+															<ExtendedTooltip name="КомандаСделатьСкриншотРасширеннаяПодсказка" id="614"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="HTMLИMarkdown" id="658">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>HTML и Markdown</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>HTMLИMarkdown</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Behavior>Collapsible</Behavior>
+													<Representation>StrongSeparation</Representation>
+													<ExtendedTooltip name="HTMLИMarkdownРасширеннаяПодсказка" id="659"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаHTML" id="513">
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа HTML</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ГруппаHTMLРасширеннаяПодсказка" id="607"/>
+															<ChildItems>
+																<CheckBoxField name="СоздаватьИнструкциюHTML" id="135">
+																	<DataPath>Объект.СоздаватьИнструкциюHTML</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Создавать HTML инструкцию</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Create HTML documentaion</v8:content>
+																		</v8:item>
+																	</Title>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="СоздаватьИнструкциюHTMLКонтекстноеМеню" id="136"/>
+																	<ExtendedTooltip name="СоздаватьИнструкциюHTMLРасширеннаяПодсказка" id="608"/>
+																</CheckBoxField>
+																<InputField name="КаталогOutputИнструкцияHTML" id="148">
+																	<DataPath>Объект.КаталогOutputИнструкцияHTML</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Каталог для формирования инструкций HTML</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>HTML documentation files dir</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ChoiceButton>true</ChoiceButton>
+																	<ClearButton>true</ClearButton>
+																	<ContextMenu name="КаталогOutputИнструкцияHTMLКонтекстноеМеню" id="149"/>
+																	<ExtendedTooltip name="КаталогOutputИнструкцияHTMLРасширеннаяПодсказка" id="609"/>
+																	<Events>
+																		<Event name="StartChoice">КаталогOutputИнструкцияHTMLНачалоВыбора</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаMarkdown" id="642">
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа markdown</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ГруппаMarkdownРасширеннаяПодсказка" id="643"/>
+															<ChildItems>
+																<CheckBoxField name="СоздаватьИнструкциюMarkdown" id="644">
+																	<DataPath>Объект.СоздаватьИнструкциюMarkdown</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Создавать Markdown инструкцию</v8:content>
+																		</v8:item>
+																	</Title>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="СоздаватьИнструкциюMarkdownКонтекстноеМеню" id="645"/>
+																	<ExtendedTooltip name="СоздаватьИнструкциюMarkdownРасширеннаяПодсказка" id="646"/>
+																</CheckBoxField>
+																<InputField name="КаталогOutputИнструкцияMarkdown" id="647">
+																	<DataPath>Объект.КаталогOutputИнструкцияMarkdown</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Каталог для формирования инструкций Markdown</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ChoiceButton>true</ChoiceButton>
+																	<ClearButton>true</ClearButton>
+																	<ContextMenu name="КаталогOutputИнструкцияMarkdownКонтекстноеМеню" id="648"/>
+																	<ExtendedTooltip name="КаталогOutputИнструкцияMarkdownРасширеннаяПодсказка" id="649"/>
+																	<Events>
+																		<Event name="StartChoice">КаталогOutputИнструкцияMarkdownНачалоВыбора</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="РаботаСВидео" id="660">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Видеоинструкция</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Работа с видео</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Behavior>Collapsible</Behavior>
+													<Representation>StrongSeparation</Representation>
+													<ExtendedTooltip name="РаботаСВидеоРасширеннаяПодсказка" id="661"/>
+													<ChildItems>
+														<Button name="ПроверитьЧтоЗаписьВидеоБудетРаботать" id="715">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ПроверитьЧтоЗаписьВидеоБудетРаботать</CommandName>
+															<ExtendedTooltip name="ПроверитьЧтоЗаписьВидеоБудетРаботатьРасширеннаяПодсказка" id="716"/>
+														</Button>
+														<UsualGroup name="ГруппаВидео" id="515">
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа видео</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ГруппаВидеоРасширеннаяПодсказка" id="610"/>
+															<ChildItems>
+																<CheckBoxField name="СоздаватьИнструкциюВидео" id="517">
+																	<DataPath>Объект.СоздаватьИнструкциюВидео</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Создавать видеоинструкцию</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Create live video documentation</v8:content>
+																		</v8:item>
+																	</Title>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="СоздаватьИнструкциюВидеоКонтекстноеМеню" id="518"/>
+																	<ExtendedTooltip name="СоздаватьИнструкциюВидеоРасширеннаяПодсказка" id="611"/>
+																</CheckBoxField>
+																<InputField name="КаталогOutputИнструкцияВидео" id="520">
+																	<DataPath>Объект.КаталогOutputИнструкцияВидео</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Каталог для формирования инструкций Видео</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ChoiceButton>true</ChoiceButton>
+																	<ClearButton>true</ClearButton>
+																	<ContextMenu name="КаталогOutputИнструкцияВидеоКонтекстноеМеню" id="521"/>
+																	<ExtendedTooltip name="КаталогOutputИнструкцияВидеоРасширеннаяПодсказка" id="612"/>
+																	<Events>
+																		<Event name="StartChoice">КаталогOutputИнструкцияВидеоНачалоВыбора</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<InputField name="ЗаписьВидеоЭкранШирина" id="700">
+															<DataPath>Объект.ЗаписьВидеоЭкранШирина</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Экран ширина</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ЗаписьВидеоЭкранШиринаКонтекстноеМеню" id="701"/>
+															<ExtendedTooltip name="ЗаписьВидеоЭкранШиринаРасширеннаяПодсказка" id="702"/>
+														</InputField>
+														<InputField name="ЗаписьВидеоЭкранВысота" id="703">
+															<DataPath>Объект.ЗаписьВидеоЭкранВысота</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Экран высота</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ЗаписьВидеоЭкранВысотаКонтекстноеМеню" id="704"/>
+															<ExtendedTooltip name="ЗаписьВидеоЭкранВысотаРасширеннаяПодсказка" id="705"/>
+														</InputField>
+														<InputField name="ЗаписьВидеоКоличествоКадров" id="706">
+															<DataPath>Объект.ЗаписьВидеоКоличествоКадров</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Количество кадров в секунду</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ЗаписьВидеоКоличествоКадровКонтекстноеМеню" id="707"/>
+															<ExtendedTooltip name="ЗаписьВидеоКоличествоКадровРасширеннаяПодсказка" id="708"/>
+														</InputField>
+														<InputField name="ЗаписьВидеоКомандаНачатьЗаписьВидео" id="662">
+															<DataPath>Объект.ЗаписьВидеоКомандаНачатьЗаписьВидео</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команда начать запись видео</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ЗаписьВидеоКомандаНачатьЗаписьВидеоКонтекстноеМеню" id="663"/>
+															<ExtendedTooltip name="ЗаписьВидеоКомандаНачатьЗаписьВидеоРасширеннаяПодсказка" id="664"/>
+														</InputField>
+														<InputField name="ЗаписьВидеоФайлКурсораМышки" id="665">
+															<DataPath>Объект.ЗаписьВидеоФайлКурсораМышки</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Файл курсор мыши</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ЗаписьВидеоФайлКурсораМышкиКонтекстноеМеню" id="666"/>
+															<ExtendedTooltip name="ЗаписьВидеоФайлКурсораМышкиРасширеннаяПодсказка" id="667"/>
+														</InputField>
+														<InputField name="ЗаписьВидеоКаталогДляВременныхФайлов" id="671">
+															<DataPath>Объект.ЗаписьВидеоКаталогДляВременныхФайлов</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Каталог для временных файлов</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ЗаписьВидеоКаталогДляВременныхФайловКонтекстноеМеню" id="672"/>
+															<ExtendedTooltip name="ЗаписьВидеоКаталогДляВременныхФайловРасширеннаяПодсказка" id="673"/>
+														</InputField>
+														<InputField name="ЗаписьВидеоФайлВодянойЗнак" id="674">
+															<DataPath>Объект.ЗаписьВидеоФайлВодянойЗнак</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Файл водяной знак</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ЗаписьВидеоФайлВодянойЗнакКонтекстноеМеню" id="675"/>
+															<ExtendedTooltip name="ЗаписьВидеоФайлВодянойЗнакРасширеннаяПодсказка" id="676"/>
+														</InputField>
+														<InputField name="ЗаписьВидеоКомандаFfmpeg" id="677">
+															<DataPath>Объект.ЗаписьВидеоКомандаFfmpeg</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команда ffmpeg</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ЗаписьВидеоКомандаFfmpegКонтекстноеМеню" id="678"/>
+															<ExtendedTooltip name="ЗаписьВидеоКомандаFfmpegРасширеннаяПодсказка" id="679"/>
+														</InputField>
+														<InputField name="ЗаписьВидеоКомандаConvert" id="680">
+															<DataPath>Объект.ЗаписьВидеоКомандаConvert</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команда Convert</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ЗаписьВидеоКомандаConvertКонтекстноеМеню" id="681"/>
+															<ExtendedTooltip name="ЗаписьВидеоКомандаConvertРасширеннаяПодсказка" id="682"/>
+														</InputField>
+														<InputField name="ЗаписьВидеоКаталогМузыки" id="683">
+															<DataPath>Объект.ЗаписьВидеоКаталогМузыки</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Каталог музыки</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ЗаписьВидеоКаталогМузыкиКонтекстноеМеню" id="684"/>
+															<ExtendedTooltip name="ЗаписьВидеоКаталогМузыкиРасширеннаяПодсказка" id="685"/>
+														</InputField>
+														<CheckBoxField name="ЗаписьВидеоПодсвечиватьАктивныеЭлементыФорм" id="709">
+															<DataPath>Объект.ЗаписьВидеоПодсвечиватьАктивныеЭлементыФорм</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подсвечивать активные элементы форм</v8:content>
+																</v8:item>
+															</Title>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ЗаписьВидеоПодсвечиватьАктивныеЭлементыФормКонтекстноеМеню" id="710"/>
+															<ExtendedTooltip name="ЗаписьВидеоПодсвечиватьАктивныеЭлементыФормРасширеннаяПодсказка" id="711"/>
+														</CheckBoxField>
+														<CheckBoxField name="ЗаписьВидеоПеремещатьКурсорМышкиКАктивномуЭлементуФормы" id="712">
+															<DataPath>Объект.ЗаписьВидеоПеремещатьКурсорМышкиКАктивномуЭлементуФормы</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Перемещать курсор мышки к активному элементу формы</v8:content>
+																</v8:item>
+															</Title>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ЗаписьВидеоПеремещатьКурсорМышкиКАктивномуЭлементуФормыКонтекстноеМеню" id="713"/>
+															<ExtendedTooltip name="ЗаписьВидеоПеремещатьКурсорМышкиКАктивномуЭлементуФормыРасширеннаяПодсказка" id="714"/>
+														</CheckBoxField>
+														<UsualGroup name="ОзвучкаГолосом" id="698">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Озвучка голосом</v8:content>
+																</v8:item>
+															</Title>
+															<TitleTextColor>#0000FF</TitleTextColor>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Озвучка голосом</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Vertical</Group>
+															<Behavior>Collapsible</Behavior>
+															<Representation>StrongSeparation</Representation>
+															<ExtendedTooltip name="ОзвучкаГолосомРасширеннаяПодсказка" id="699"/>
+															<ChildItems>
+																<CheckBoxField name="ЗаписьВидеоДелатьНаложениеTTS" id="686">
+																	<DataPath>Объект.ЗаписьВидеоДелатьНаложениеTTS</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Делать озвучку TTS</v8:content>
+																		</v8:item>
+																	</Title>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ЗаписьВидеоДелатьНаложениеTTSКонтекстноеМеню" id="687"/>
+																	<ExtendedTooltip name="ЗаписьВидеоДелатьНаложениеTTSРасширеннаяПодсказка" id="688"/>
+																</CheckBoxField>
+																<InputField name="ЗаписьВидеоПутьКДвижкуTTS" id="689">
+																	<DataPath>Объект.ЗаписьВидеоПутьКДвижкуTTS</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Путь к движку TTS</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ЗаписьВидеоПутьКДвижкуTTSКонтекстноеМеню" id="690"/>
+																	<ExtendedTooltip name="ЗаписьВидеоПутьКДвижкуTTSРасширеннаяПодсказка" id="691"/>
+																</InputField>
+																<InputField name="ЗаписьВидеоИмяTTS" id="692">
+																	<DataPath>Объект.ЗаписьВидеоИмяTTS</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Имя голоса TTS</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ЗаписьВидеоИмяTTSКонтекстноеМеню" id="693"/>
+																	<ExtendedTooltip name="ЗаписьВидеоИмяTTSРасширеннаяПодсказка" id="694"/>
+																</InputField>
+																<InputField name="ЗаписьВидеоСловарьЗамен" id="695">
+																	<DataPath>Объект.ЗаписьВидеоСловарьЗамен</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Путь к словарю замен</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ЗаписьВидеоСловарьЗаменКонтекстноеМеню" id="696"/>
+																	<ExtendedTooltip name="ЗаписьВидеоСловарьЗаменРасширеннаяПодсказка" id="697"/>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
 									</ChildItems>
-								</UsualGroup>
-								<InputField name="VanessaStackCommons" id="364">
-									<DataPath>Объект.VanessaStackCommons</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>адрес расширенных инструментов Vanessa Satck Commons</v8:content>
-										</v8:item>
-										<v8:item>
-											<v8:lang>en</v8:lang>
-											<v8:content>path for extended Vanessa Satck Commons</v8:content>
-										</v8:item>
-									</Title>
-									<ChoiceButton>true</ChoiceButton>
-									<ClearButton>true</ClearButton>
-									<ContextMenu name="VanessaStackCommonsКонтекстноеМеню" id="365"/>
-									<ExtendedTooltip name="VanessaStackCommonsРасширеннаяПодсказка" id="634"/>
-									<Events>
-										<Event name="StartChoice">VanessaStackCommonsНачалоВыбора</Event>
-									</Events>
-								</InputField>
-								<InputField name="КаталогИнструментов" id="380">
-									<DataPath>Объект.КаталогИнструментов</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>каталог Vanessa Stack</v8:content>
-										</v8:item>
-										<v8:item>
-											<v8:lang>en</v8:lang>
-											<v8:content>directory for Vanessa Stack</v8:content>
-										</v8:item>
-									</Title>
-									<ChoiceButton>true</ChoiceButton>
-									<ClearButton>true</ClearButton>
-									<ContextMenu name="КаталогИнструментовКонтекстноеМеню" id="381"/>
-									<ExtendedTooltip name="КаталогИнструментовРасширеннаяПодсказка" id="635"/>
-									<Events>
-										<Event name="StartChoice">КаталогИнструментовНачалоВыбора</Event>
-									</Events>
-								</InputField>
-								<InputField name="КаталогПроекта" id="650">
-									<DataPath>Объект.КаталогПроекта</DataPath>
-									<ChoiceButton>true</ChoiceButton>
-									<ClearButton>true</ClearButton>
-									<ContextMenu name="КаталогПроектаКонтекстноеМеню" id="651"/>
-									<ExtendedTooltip name="КаталогПроектаРасширеннаяПодсказка" id="652"/>
-									<Events>
-										<Event name="StartChoice">КаталогПроектаНачалоВыбора</Event>
-									</Events>
-								</InputField>
+								</Pages>
 							</ChildItems>
 						</Page>
 						<Page name="ГруппаСлужебная" id="484">
@@ -1592,7 +1773,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Каталог фич (слеужебный)</v8:content>
+											<v8:content>Каталог фич (служебный)</v8:content>
 										</v8:item>
 										<v8:item>
 											<v8:lang>en</v8:lang>
@@ -1607,7 +1788,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Каталог инструентов (служебный)</v8:content>
+											<v8:content>Каталог инструментов (служебный)</v8:content>
 										</v8:item>
 										<v8:item>
 											<v8:lang>en</v8:lang>
@@ -1616,6 +1797,9 @@
 									</Title>
 									<ContextMenu name="КаталогИнструментовСлужебныйКонтекстноеМеню" id="495"/>
 									<ExtendedTooltip name="КаталогИнструментовСлужебныйРасширеннаяПодсказка" id="639"/>
+									<Events>
+										<Event name="OnChange">КаталогИнструментовСлужебныйПриИзменении</Event>
+									</Events>
 								</InputField>
 								<Button name="ДляВызоваКонфигуратора" id="492">
 									<Type>UsualButton</Type>
@@ -2701,20 +2885,39 @@
 			</ToolTip>
 			<Action>СвернутьДеревоДоСценариев</Action>
 		</Command>
-		<Command name="СохранитьНастройки" id="21">
+		<Command name="ПроверитьЧтоЗаписьВидеоБудетРаботать" id="21">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить настройки</v8:content>
+					<v8:content>Проверить что запись видео будет работать</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить настройки</v8:content>
+					<v8:content>Проверить что запись видео будет работать</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>СохранитьНастройки1</Action>
+			<Action>ПроверитьЧтоЗаписьВидеоБудетРаботать</Action>
+		</Command>
+		<Command name="КомандаСохранитьНастроийки" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сохранить настроийки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сохранить настроийки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаСохранитьНастроийки</Action>
 		</Command>
 	</Commands>
 </Form>
