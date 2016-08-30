@@ -13,5 +13,5 @@ rem set RUNNER_DBPWD=234567890
 SET RUNNER_ENV=production
 
 echo "compileepf"
-oscript %mypath%/runner.os compileepf .\ %BUILDPATH%\out\
+oscript -encoding=utf-8 %mypath%/runner.os compileepf .\ %BUILDPATH%\out\
 exit /B
