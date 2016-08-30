@@ -2,6 +2,8 @@
 # language: ru
 
 @IgnoreOnLinux
+# TODO: Убрать тег после разрешения проблемы генерации на new 
+@IgnoreOnCIMainBuild
 
 #https://github.com/silverbulleters/vanessa-behavior/issues/232
 
