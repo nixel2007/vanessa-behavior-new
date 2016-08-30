@@ -10,7 +10,7 @@ node("slave") {
     } else {
         env.DISPLAY=":1"
     }
-    env.RUNNER_ENV="production";
+    //env.RUNNER_ENV="production";
 
     if (isUnix()) {sh 'git config --system core.longpaths'} else {bat "git config --system core.longpaths"}
 
@@ -18,7 +18,12 @@ node("slave") {
     
     stage "Контроль технического долга"
 
-    echo "will be soon"
+    if (env.QASONAR) {
+        println env.QASONAR;
+
+    } else {
+        echo "QA runner not installed"
+    }
 
     stage "Подготовка окружения"
 
@@ -30,7 +35,7 @@ node("slave") {
     if (env.V8VERSION) {
         v8version = "--v8version ${env.V8VERSION}"
     }
-    def command = "oscript tools/init.os init-dev ${v8version} --src "+srcpath
+    def command = "oscript -encoding=utf-8 tools/init.os init-dev ${v8version} --src "+srcpath
     timestamps {
         if (isUnix()){
             sh "${command}"
@@ -38,11 +43,11 @@ node("slave") {
             bat "chcp 1251\n${command}"
         }
     }
-
+    
     stage "Сборка поставки"
 	
     echo "build catalogs"
-    command = """oscript tools/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
+    command = """oscript -encoding=utf-8 tools/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
     if (isUnix()) {sh "${command}"} else {bat "chcp 1251\n${command}"}       
     
     stage "Проверка поведения BDD"
@@ -50,8 +55,25 @@ node("slave") {
     if (env.PATHSETTINGS) {
         testsettings = env.PATHSETTINGS;
     }
-    command = """oscript tools/runner.os vanessa ${v8version} --ibname /F"./build/ib" --path ./build/out/vanessa-behavior.epf --pathsettings ./tools/JSON/${testsettings} """
+    
+    // TODO:
+    // Придумать, как это сделать красиво и с учетом того, что задано в VBParams837UF.json
+    // Стр = Стр + " /Execute " + ПараметрыСборки["EpfДляИнициализацияБазы"] + " /C""InitDataBase;VBParams=" + ПараметрыСборки["ПараметрыДляИнициализацияБазы"] + """";
+    def VBParamsPath = pwd().replaceAll("%", "%%") + "/build/out/tools/epf/init.json"
+    command = """oscript -encoding=utf-8 tools/runner.os run ${v8version} --ibname /F"./build/ib" --execute "./build/out/tools/epf/init.epf" --command "InitDataBase;VBParams=${VBParamsPath}" """
     def errors = []
+    try{
+        if (isUnix()){
+            sh "${command}"
+            
+        } else {
+            bat "chcp 1251\n${command}"
+        }
+    } catch (e) {
+         errors << "BDD status : ${e}"
+    }
+
+    command = """oscript -encoding=utf-8 tools/runner.os vanessa ${v8version} --ibname /F"./build/ib" --path ./build/out/vanessa-behavior.epf --pathsettings ./tools/JSON/${testsettings} """
     try{
         if (isUnix()){
             sh "${command}"

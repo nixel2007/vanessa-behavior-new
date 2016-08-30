@@ -18,6 +18,6 @@ set mode=%1
 )
 
 echo "init"
-oscript %mypath%/init.os init-dev --src %mode%
-oscript %mypath%/init.os init-dev --src %mode% --dev
+oscript -encoding=utf-8 %mypath%/init.os init-dev --src %mode%
+oscript -encoding=utf-8 %mypath%/init.os init-dev --src %mode% --dev
 exit /B
